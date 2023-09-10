@@ -19,6 +19,9 @@ struct CategoryView: View {
     
     @State private var categoryName: String = "";
     
+    let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "Error"
+    @State private var isSettingsShown: Bool = false;
+    
     var body: some View {
         NavigationView {
             List {
@@ -57,6 +60,15 @@ struct CategoryView: View {
                 }
             }
             .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button {
+                        isSettingsShown.toggle()
+                    } label: {
+                        Image(systemName: "gear.circle.fill")
+                            .font(.title3)
+                    }
+                }
+                
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
                         addCategory.toggle()
@@ -65,6 +77,22 @@ struct CategoryView: View {
                             .font(.title3)
                     }
                 }
+            }
+            .sheet(isPresented: $isSettingsShown) {
+                
+            } content: {
+                NavigationStack {
+                    Form {
+                        Section("About") {
+                            HText(property: "Developer", value: "Pierre (Piarre) IDÉ")
+                            HText(property: "Version", value: "\(version)")
+                        }
+                    }
+                    .navigationTitle("Settings")
+                    .navigationBarTitleDisplayMode(.inline)
+                }
+                .presentationDetents([.height(220)])
+                .presentationCornerRadius(20)
             }
             .sheet(isPresented: $addCategory) {
                 categoryName = ""

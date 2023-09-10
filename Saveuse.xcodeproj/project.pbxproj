@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F42FFC42AAE460400759A9B /* HText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F42FFC32AAE460400759A9B /* HText.swift */; };
 		9FCE2FB02AADF569002F2F06 /* SaveuseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE2FAF2AADF569002F2F06 /* SaveuseApp.swift */; };
 		9FCE2FB22AADF569002F2F06 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE2FB12AADF569002F2F06 /* ContentView.swift */; };
 		9FCE2FB62AADF56D002F2F06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FCE2FB52AADF56D002F2F06 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F42FFC32AAE460400759A9B /* HText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HText.swift; sourceTree = "<group>"; };
 		9FCE2FAC2AADF569002F2F06 /* Saveuse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Saveuse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCE2FAF2AADF569002F2F06 /* SaveuseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveuseApp.swift; sourceTree = "<group>"; };
 		9FCE2FB12AADF569002F2F06 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F42FFC22AAE45FA00759A9B /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				9F42FFC32AAE460400759A9B /* HText.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		9FCE2FA32AADF569002F2F06 = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +75,7 @@
 		9FCE2FAE2AADF569002F2F06 /* Saveuse */ = {
 			isa = PBXGroup;
 			children = (
+				9F42FFC22AAE45FA00759A9B /* Component */,
 				9FCE2FC42AADF79E002F2F06 /* View */,
 				9FCE2FBF2AADF683002F2F06 /* Model */,
 				9FCE2FAF2AADF569002F2F06 /* SaveuseApp.swift */,
@@ -176,6 +187,7 @@
 			files = (
 				9FCE2FC12AADF691002F2F06 /* Expense.swift in Sources */,
 				9FCE2FC82AADF7D1002F2F06 /* CategoryView.swift in Sources */,
+				9F42FFC42AAE460400759A9B /* HText.swift in Sources */,
 				9FCE2FC62AADF7B7002F2F06 /* ExpensesView.swift in Sources */,
 				9FCE2FC32AADF6DE002F2F06 /* Category.swift in Sources */,
 				9FCE2FB22AADF569002F2F06 /* ContentView.swift in Sources */,
@@ -319,11 +331,12 @@
 				DEVELOPMENT_TEAM = 6834T9U956;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -331,9 +344,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = fr.piarre.Saveuse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -348,11 +365,12 @@
 				DEVELOPMENT_TEAM = 6834T9U956;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -360,9 +378,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = fr.piarre.Saveuse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

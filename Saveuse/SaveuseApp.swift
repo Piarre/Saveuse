@@ -15,6 +15,6 @@ struct SaveuseApp: App {
         WindowGroup {
             ContentView()
         }
-        .modelContainer(for: Item.self)
+        .modelContainer(for: [Expense.self, Category.self])
     }
 }

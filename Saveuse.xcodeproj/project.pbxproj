@@ -9,18 +9,30 @@
 /* Begin PBXBuildFile section */
 		9FCE2FB02AADF569002F2F06 /* SaveuseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE2FAF2AADF569002F2F06 /* SaveuseApp.swift */; };
 		9FCE2FB22AADF569002F2F06 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE2FB12AADF569002F2F06 /* ContentView.swift */; };
-		9FCE2FB42AADF569002F2F06 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE2FB32AADF569002F2F06 /* Item.swift */; };
 		9FCE2FB62AADF56D002F2F06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FCE2FB52AADF56D002F2F06 /* Assets.xcassets */; };
 		9FCE2FB92AADF56D002F2F06 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FCE2FB82AADF56D002F2F06 /* Preview Assets.xcassets */; };
+		9FCE2FC12AADF691002F2F06 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE2FC02AADF691002F2F06 /* Expense.swift */; };
+		9FCE2FC32AADF6DE002F2F06 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE2FC22AADF6DE002F2F06 /* Category.swift */; };
+		9FCE2FC62AADF7B7002F2F06 /* ExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE2FC52AADF7B7002F2F06 /* ExpensesView.swift */; };
+		9FCE2FC82AADF7D1002F2F06 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE2FC72AADF7D1002F2F06 /* CategoryView.swift */; };
+		9FCE2FCA2AADF9A2002F2F06 /* GroupedExpenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE2FC92AADF9A2002F2F06 /* GroupedExpenses.swift */; };
+		9FCE2FCC2AADFBE0002F2F06 /* AddExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE2FCB2AADFBE0002F2F06 /* AddExpenseView.swift */; };
+		9FCE2FCE2AAE05C9002F2F06 /* ExpenseCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FCE2FCD2AAE05C9002F2F06 /* ExpenseCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9FCE2FAC2AADF569002F2F06 /* Saveuse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Saveuse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FCE2FAF2AADF569002F2F06 /* SaveuseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveuseApp.swift; sourceTree = "<group>"; };
 		9FCE2FB12AADF569002F2F06 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		9FCE2FB32AADF569002F2F06 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		9FCE2FB52AADF56D002F2F06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FCE2FB82AADF56D002F2F06 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9FCE2FC02AADF691002F2F06 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		9FCE2FC22AADF6DE002F2F06 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		9FCE2FC52AADF7B7002F2F06 /* ExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesView.swift; sourceTree = "<group>"; };
+		9FCE2FC72AADF7D1002F2F06 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		9FCE2FC92AADF9A2002F2F06 /* GroupedExpenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupedExpenses.swift; sourceTree = "<group>"; };
+		9FCE2FCB2AADFBE0002F2F06 /* AddExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseView.swift; sourceTree = "<group>"; };
+		9FCE2FCD2AAE05C9002F2F06 /* ExpenseCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +65,10 @@
 		9FCE2FAE2AADF569002F2F06 /* Saveuse */ = {
 			isa = PBXGroup;
 			children = (
+				9FCE2FC42AADF79E002F2F06 /* View */,
+				9FCE2FBF2AADF683002F2F06 /* Model */,
 				9FCE2FAF2AADF569002F2F06 /* SaveuseApp.swift */,
 				9FCE2FB12AADF569002F2F06 /* ContentView.swift */,
-				9FCE2FB32AADF569002F2F06 /* Item.swift */,
 				9FCE2FB52AADF56D002F2F06 /* Assets.xcassets */,
 				9FCE2FB72AADF56D002F2F06 /* Preview Content */,
 			);
@@ -68,6 +81,27 @@
 				9FCE2FB82AADF56D002F2F06 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9FCE2FBF2AADF683002F2F06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9FCE2FC02AADF691002F2F06 /* Expense.swift */,
+				9FCE2FC22AADF6DE002F2F06 /* Category.swift */,
+				9FCE2FC92AADF9A2002F2F06 /* GroupedExpenses.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9FCE2FC42AADF79E002F2F06 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9FCE2FC52AADF7B7002F2F06 /* ExpensesView.swift */,
+				9FCE2FC72AADF7D1002F2F06 /* CategoryView.swift */,
+				9FCE2FCB2AADFBE0002F2F06 /* AddExpenseView.swift */,
+				9FCE2FCD2AAE05C9002F2F06 /* ExpenseCardView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +174,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FCE2FC12AADF691002F2F06 /* Expense.swift in Sources */,
+				9FCE2FC82AADF7D1002F2F06 /* CategoryView.swift in Sources */,
+				9FCE2FC62AADF7B7002F2F06 /* ExpensesView.swift in Sources */,
+				9FCE2FC32AADF6DE002F2F06 /* Category.swift in Sources */,
 				9FCE2FB22AADF569002F2F06 /* ContentView.swift in Sources */,
-				9FCE2FB42AADF569002F2F06 /* Item.swift in Sources */,
+				9FCE2FCA2AADF9A2002F2F06 /* GroupedExpenses.swift in Sources */,
+				9FCE2FCC2AADFBE0002F2F06 /* AddExpenseView.swift in Sources */,
+				9FCE2FCE2AAE05C9002F2F06 /* ExpenseCardView.swift in Sources */,
 				9FCE2FB02AADF569002F2F06 /* SaveuseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
